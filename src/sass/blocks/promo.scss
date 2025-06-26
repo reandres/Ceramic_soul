@@ -2,7 +2,8 @@
     padding-top: 50px;
     position: relative;
     &__wrapper {
-        margin-top: 50px;    }
+        margin-top: 50px;    
+    }
     &__title {
         padding-inline: 5px;
     }
@@ -51,11 +52,34 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 450px;
+            width: clamp(450px, 37.5vw, 640px);
             height: 633px;
+            object-fit: cover;
         }
         &__title {
             padding: 250px 0 0 571px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .promo {
+        padding-top: 40px;
+        &__wrapper {
+            margin-top: 79px;    
+        }
+        &__img {
+            width: 330px;
+            height: 460px;
+        }
+        &__btn {
+            margin: 50px auto 0 auto;
+        }
+        &__title {
+            padding: 384px 0 0 642px;
+        }
+        &__potter {
+            height: 900px;
         }
     }
 }
