@@ -5,7 +5,8 @@
 	&__wrapper {
 		margin-top: 60px;
 	}
-	&__img {
+	&__img,
+    &__img-vase {
 		display: none;
 	}
     &__fieldset {
@@ -79,6 +80,26 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .touch {
+        &__wrapper {
+            position: relative;
+        }
+        &__fieldset {
+            width: 300px;
+        }
+        &__textarea {
+            width: 300px;
+        }
+        &__img-vase {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
 	.touch {
 		&__img {
@@ -103,5 +124,18 @@
 			width: 100%;
 			height: 356px;
 		}
+        &__col-form {
+            padding-left: 147px;
+        }
+        &__fieldset {
+            display: flex;
+            gap: 45px;
+        }
+        &__input-block {
+            width: 300px;
+        }
+        &__img-vase {
+            right: 65px;
+        }
 	}
 }
