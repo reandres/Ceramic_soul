@@ -28,6 +28,18 @@
     .swiper-pagination-bullet-active {
         background-color: $Ceramic;
     }
+}
 
+@media screen and (min-width: 768px) {
+    .works {
+        .swiper-slide img {
+            display: block;
+            width: 400px;
+            margin: 0 auto;
+        }
+        &__slider {
+            margin-top: 45px;
+        }
+    }
 }
 
